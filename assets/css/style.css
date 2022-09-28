@@ -17,6 +17,7 @@ body {
 
 #searchbtn {
   width: 200px;
+  height: 38px;
   
 }
 
@@ -36,8 +37,8 @@ body {
   border: 2px solid black;
 }
 
-.currentweather {
+#currentweather {
   border: 2px solid black;
-  height:100px;
+  height:250px;
 
 }
