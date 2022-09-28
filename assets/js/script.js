@@ -48,8 +48,12 @@ function displayCurrentWeather(data) {
     // adding values to the elements
     tempEl.innerText = "Temp: " + temp + " \u00B0F";
 
+    currentWeather.appendChild(date)
+    currentWeather.appendChild(cityName)  
     currentWeather.appendChild(tempEl)
-      
+    currentWeather.appendChild(humdity)
+    currentWeather.appendChild(windSpeed)
+    
 
 }
 
