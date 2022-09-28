@@ -1,0 +1,43 @@
+
+body {
+  background-color: #E1FAF9;
+  padding: 15px;
+
+}
+
+#search {
+  object-position: left;
+}
+
+.container {
+  display: inline;
+
+}
+
+
+#searchbtn {
+  width: 200px;
+  
+}
+
+#searchfield {
+  height: 38px;
+  width: 200px;
+  margin-bottom: 5px;;
+}
+
+
+#banner {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: xx-large;
+  border: 2px solid black;
+}
+
+.currentweather {
+  border: 2px solid black;
+  height:100px;
+
+}
