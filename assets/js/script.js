@@ -62,6 +62,9 @@ function displayCurrentWeather(data) {
     currentWeather.append(card)
 }
 
+// loop over the data in incrents of 7 to offset the 3hr breakdown get 1 day increments
+//display each day in a small card below the large card
+
 function weather5Day(data) {
   for (var i = 7; i < data.list.length; i +=7){
     
@@ -118,30 +121,9 @@ function getApi(event) {
     });
 }
 
-// loop over the data in incrents of 7 to offset the 3hr breakdown get 1 day increments
-//display each day in a small card below the large card
+
 
 
 searchButton.addEventListener("click", getApi);
 
-//Code below provided by instructor as a workaround to how the weather API works.
-// const weatherDays = []
-// let currDay = null
-
-// sampleData.list.forEach( function(tsObj){
-
-//   // Makes a moment date object for each record
-//   const dateObj = moment.unix(tsObj.dt)
-
-//   // Generate the day # for the day in the date object
-//   const dateNum = dateObj.format("DDD")
-
-//   // If the current date in tsObj hasn't had a record put into weatherDays, do that now
-//   // Then skip over all other records for this day
-//   if( dateNum !== currDay && weatherDays.length < 5 ){
-//     weatherDays.push( tsObj )
-//     currDay = dateNum
-//   }
-
-// })
 
