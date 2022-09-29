@@ -32,12 +32,14 @@ loadFromLocalStorage();
 // dispaly todays weather in the large card
 function displayCurrentWeather(data) {
   for (var i = 7; i < data.list.length; i +=7)
-    var todayTemp = data.list[i];
-
+    var today = data.list[0];
+  
     // Accessing values
-    var temp = todayTemp.main.temp;
+    var tTemp = today.main.temp;
+    var tDate = today.dt;
+    var tCity = data.name;
+    console.log(tCity)
 
-    var small = document.createElement('div')
     var cityName = document.createElement('div')
     var date = document.createElement('div')
     var icon = document.createElement('img')
@@ -46,7 +48,9 @@ function displayCurrentWeather(data) {
     var windSpeed = document.createElement('div')
 
     // adding values to the elements
-    tempEl.innerText = "Temp: " + temp + " \u00B0F";
+    date.innerText = moment.unix(tDate).format("MM/DD/YYYY");
+    cityName.innerText = tCity;
+    tempEl.innerText = "Temp: " + tTemp + " \u00B0F";
 
     currentWeather.appendChild(date)
     currentWeather.appendChild(cityName)  
