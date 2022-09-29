@@ -4,7 +4,7 @@
 
 The goal of this assignment was to create a weather dashboard that allows the user to search a city within the US and receieve back the current weather along with the 5 day forecast.
 
-DEPLOYED SITE HERE
+https://theinterloper.github.io/06-weather-dashboard/
 
 ![](assets/images/weather.png)
 
